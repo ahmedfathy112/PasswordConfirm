@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Password</title>
+    <style>
+      body {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        color: orange;
+        font-size: 30px;
+        font: 600;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+      form label {
+        font-size: 18px;
+        color: aliceblue;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+      form div {
+        margin-top: 30px;
+      }
+      form input {
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 8px 15px;
+        font-size: 17px;
+      }
+      form button {
+        display: inline;
+        width: 200px;
+        margin: auto;
+        margin-top: 30px;
+        outline: none;
+        border-radius: 15px;
+        background-color: orange;
+        color: aliceblue;
+        font-size: 20px;
+        cursor: pointer;
+        border: 2px solid orange;
+        padding: 15px 20px;
+        transition: 0.8s ease-in-out;
+      }
+      form button:hover {
+        color: orange;
+        background-color: transparent;
+      }
+      #result {
+        font-size: 25px;
+        color: aliceblue;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>SHOW IF PASSWORD IS CONFIRMED</h1>
+      <form>
+        <div>
+          <label for="password">password</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+        <div>
+          <label for="ConfirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="ConfirmPassword"
+            id="ConfirmPassword"
+            required
+          />
+        </div>
+        <button id="btnSubmit">Show</button>
+      </form>
+      <p id="result">RESULT:</p>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
